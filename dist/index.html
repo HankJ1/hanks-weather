@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="main-header">Welcome to the Weather</h1>
+    </div>
+
+    <form class="weather-search">
+        <label class="label" for="searchbar">City...</label>
+        <input class="text-input" name="searchbar" type="text">
+        <button class="submit" type="submit">Search</button>
+    </form>
+
+    <div class="city-background">
+        <div class="weather-container">
+            <pre class="city-name">Seattle</pre>
+            <img class="weather-icon">
+            <pre class="temp">75 degrees</pre>
+            <pre class="description">partly sunny</pre>
+            
+        </div>
+    </div>
+
+
+    <h2>Hourly Forecast...</h2>
+    <div class="hourly-container">
+        <div class="hourly">
+            <pre class="hourly-name" id="hour-pre">lord</pre>
+            <img class="hourly-icon">
+            <pre class="hourly-temp" id="hour-pre">45</pre>
+            <pre class="hourly-description">partly sunny</pre>
+        </div>
+    </div> 
+
+    <h2>Weekly Forecast...</h2>
+
+    <div class="weekly-container">
+        <div class="weekly">
+            <pre class="weekly-name">lord</pre>
+            <img class="weekly-icon">
+            <pre class="weekly-temp" id="week-pre">45</pre>
+            <pre class="weekly-description">partly sunny</pre>
+        </div>
+    </div> 
+    
+    <!-- <script src="scripts.js"></script> -->
+    <script src="./bundle.js"></script>
+</body>
+</html>
