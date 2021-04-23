@@ -2,6 +2,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./data.js":
+/*!*****************!*\
+  !*** ./data.js ***!
+  \*****************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "links": () => (/* binding */ links)
+/* harmony export */ });
+
+
+let links = [
+        { name: 'clear-sky', source: "./images/clear-sky.jpeg"},
+        { name: 'few-clouds', source: "./images/scattered-clouds.jpeg"},
+        { name: 'broken-clouds', source: "./thick-clouds.png"},
+        { name: 'rain', source: "./images/rain.jpeg"},
+        { name: 'thunderstorm', source: './images/thunderstorm.jpeg'},
+        { name: 'snow', source: './images/snow.jpeg'},
+        { name: 'mist', source: './images/mist.jpeg'},
+        { name: 'night', source: './images/moon.jpeg'}
+    ]
+
+
+
+/***/ }),
+
+/***/ "./images/scattered-clouds.jpeg":
+/*!**************************************!*\
+  !*** ./images/scattered-clouds.jpeg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "b9e7cf6ceb9e71767f86.jpeg";
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./styles.css":
 /*!**********************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./styles.css ***!
@@ -16,12 +53,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_scattered_clouds_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/scattered-clouds.jpeg */ "./images/scattered-clouds.jpeg");
 // Imports
 
 
+
+
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_images_scattered_clouds_jpeg__WEBPACK_IMPORTED_MODULE_3__);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nbody {\n    background-color: rgb(62, 66, 66);\n    \n}\n\n\n.header {\n    position: relative;\n    top: 0px;\n    height: 60px;\n    width: auto;\n    text-align: center;\n    color: white;\n     \n}\n    .main-header {\n        text-shadow: 2px 2px 10px black;\n    }\n\n.weather-search {\n    display: inline-block;\n    position: relative;\n    left: 50%;\n    transform: translate(-50%, 0);\n    \n}\n    .label {\n        margin-right: 5px;\n        font-size: 24px;\n        color: white;\n    }\n    .text-input {\n        width: 250px;\n        height: 25px;\n        border-radius: 15px;\n        background-color:rgba(100, 105, 105, 0.747);\n        border: none;\n        color: white;\n        padding-left: 10px;\n        font-size: 16px;\n        box-shadow: 2px 2px 2px black;\n    }\n        .text-input:focus {\n            outline: none;\n        }\n    .submit {\n        margin-left: 5px;\n        height: 30px;\n        width: 80px;\n        border-radius: 5px;\n        font-size: 18px;\n        color: white;\n        background-color:rgba(100, 105, 105, 0.747);\n        border: none;\n    }\n        .submit:hover {\n            transform: scale(1.1);\n        }\n\n.city-background {\n    margin-top: 10px;\n    width: 100%;\n    height: 500px;\n    background-image: url(\"https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg\");\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: (0, 0);\n    box-shadow: 2px 2px 2px rgba(12, 12, 12, 0.6);\n    background-blend-mode: darken;\n    \n}\n    .weather-container {\n        position: relative;\n        padding-top: 5px;\n        height: 190px;\n        width: 160px;\n        z-index: 5;\n        /* border: 1px solid black; */\n        left: 50px;\n        top: 40px;\n        text-align: center;\n        background-color:rgba(192, 197, 197, 0.4);\n        /* box-shadow: 2px 2px 1px rgba(95, 97, 97, 0.6); */\n        border-radius: 5px;\n\n    }\n        .city-name {\n            font-size: 24px;\n            margin-top: 10px;\n            font-family: helvetica;\n            font-weight: bolder;\n        }\n        .weather-icon {\n            margin-top: -30px;\n            padding: none;\n            transform: scale(1.5);\n        }\n        .temp {\n            font-size: 22px;\n            margin-top: -15px;\n            font-family: helvetica;\n            color: black;\n            font-weight: bold;\n        }\n        .description {\n            font-size: 20px;\n            margin-top: -15px;\n            font-family: helvetica;\n        }\n\nh2 {\n    color: white;\n}\n\n.hourly-container {\n    display: grid;\n    margin-top: 15px;\n    height: 300px;\n    grid-template-columns: repeat(7, 1fr);\n    grid-template-rows: repeat(2, 1fr);\n    /* outline: 1px solid black; */\n    color: white;\n}\n    .hourly {\n        padding-top: -5px;\n        height: 150px;\n        border: 1px solid black;\n        text-align: center;\n        background-color:rgba(167, 173, 173, 0.301);\n    }\n        .hourly-name {\n            margin-top: 5px;\n        }\n        .hourly-icon {\n            transform: scale(1.2);\n            margin-top: -35px;\n        }\n        .hourly-temp {\n            margin-top: -20px;\n            font-size: 18px;\n        }\n        .hourly-description {\n            margin-top: -5px;\n            font-size: 1em;\n        }\n        #hour-pre {\n            font-size: 18px;\n        }\n\n.weekly-container {\n    display: grid;\n    margin-top: 15px;\n    height: 300px;\n    grid-template-columns: repeat(7, 1fr);\n    grid-template-rows: repeat(1, 1fr);\n    /* outline: 1px solid black; */\n    color: white;\n}\n    .weekly {\n        padding-top: -5px;\n        height: 150px;\n        border: 1px solid black;\n        text-align: center;\n        background-color:rgba(167, 173, 173, 0.301);\n    }\n        .weekly-name {\n            margin-top: 5px;\n            font-size: 1.2em;\n            margin-bottom: 20px;\n        }\n        .weekly-icon {\n            transform: scale(1.2);\n            margin-top: -35px;\n        }\n        .weekly-temp {\n            margin-top: -20px;\n            font-size: 18px;\n        }\n        .weekly-description {\n            margin-top: -5px;\n            font-size: 1em;\n        }\n        #week-pre {\n            font-size: 18px;\n        }", "",{"version":3,"sources":["webpack://./styles.css"],"names":[],"mappings":";AACA;IACI,iCAAiC;;AAErC;;;AAGA;IACI,kBAAkB;IAClB,QAAQ;IACR,YAAY;IACZ,WAAW;IACX,kBAAkB;IAClB,YAAY;;AAEhB;IACI;QACI,+BAA+B;IACnC;;AAEJ;IACI,qBAAqB;IACrB,kBAAkB;IAClB,SAAS;IACT,6BAA6B;;AAEjC;IACI;QACI,iBAAiB;QACjB,eAAe;QACf,YAAY;IAChB;IACA;QACI,YAAY;QACZ,YAAY;QACZ,mBAAmB;QACnB,2CAA2C;QAC3C,YAAY;QACZ,YAAY;QACZ,kBAAkB;QAClB,eAAe;QACf,6BAA6B;IACjC;QACI;YACI,aAAa;QACjB;IACJ;QACI,gBAAgB;QAChB,YAAY;QACZ,WAAW;QACX,kBAAkB;QAClB,eAAe;QACf,YAAY;QACZ,2CAA2C;QAC3C,YAAY;IAChB;QACI;YACI,qBAAqB;QACzB;;AAER;IACI,gBAAgB;IAChB,WAAW;IACX,aAAa;IACb,0KAA0K;IAC1K,sBAAsB;IACtB,4BAA4B;IAC5B,2BAA2B;IAC3B,6CAA6C;IAC7C,6BAA6B;;AAEjC;IACI;QACI,kBAAkB;QAClB,gBAAgB;QAChB,aAAa;QACb,YAAY;QACZ,UAAU;QACV,6BAA6B;QAC7B,UAAU;QACV,SAAS;QACT,kBAAkB;QAClB,yCAAyC;QACzC,mDAAmD;QACnD,kBAAkB;;IAEtB;QACI;YACI,eAAe;YACf,gBAAgB;YAChB,sBAAsB;YACtB,mBAAmB;QACvB;QACA;YACI,iBAAiB;YACjB,aAAa;YACb,qBAAqB;QACzB;QACA;YACI,eAAe;YACf,iBAAiB;YACjB,sBAAsB;YACtB,YAAY;YACZ,iBAAiB;QACrB;QACA;YACI,eAAe;YACf,iBAAiB;YACjB,sBAAsB;QAC1B;;AAER;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,gBAAgB;IAChB,aAAa;IACb,qCAAqC;IACrC,kCAAkC;IAClC,8BAA8B;IAC9B,YAAY;AAChB;IACI;QACI,iBAAiB;QACjB,aAAa;QACb,uBAAuB;QACvB,kBAAkB;QAClB,2CAA2C;IAC/C;QACI;YACI,eAAe;QACnB;QACA;YACI,qBAAqB;YACrB,iBAAiB;QACrB;QACA;YACI,iBAAiB;YACjB,eAAe;QACnB;QACA;YACI,gBAAgB;YAChB,cAAc;QAClB;QACA;YACI,eAAe;QACnB;;AAER;IACI,aAAa;IACb,gBAAgB;IAChB,aAAa;IACb,qCAAqC;IACrC,kCAAkC;IAClC,8BAA8B;IAC9B,YAAY;AAChB;IACI;QACI,iBAAiB;QACjB,aAAa;QACb,uBAAuB;QACvB,kBAAkB;QAClB,2CAA2C;IAC/C;QACI;YACI,eAAe;YACf,gBAAgB;YAChB,mBAAmB;QACvB;QACA;YACI,qBAAqB;YACrB,iBAAiB;QACrB;QACA;YACI,iBAAiB;YACjB,eAAe;QACnB;QACA;YACI,gBAAgB;YAChB,cAAc;QAClB;QACA;YACI,eAAe;QACnB","sourcesContent":["\nbody {\n    background-color: rgb(62, 66, 66);\n    \n}\n\n\n.header {\n    position: relative;\n    top: 0px;\n    height: 60px;\n    width: auto;\n    text-align: center;\n    color: white;\n     \n}\n    .main-header {\n        text-shadow: 2px 2px 10px black;\n    }\n\n.weather-search {\n    display: inline-block;\n    position: relative;\n    left: 50%;\n    transform: translate(-50%, 0);\n    \n}\n    .label {\n        margin-right: 5px;\n        font-size: 24px;\n        color: white;\n    }\n    .text-input {\n        width: 250px;\n        height: 25px;\n        border-radius: 15px;\n        background-color:rgba(100, 105, 105, 0.747);\n        border: none;\n        color: white;\n        padding-left: 10px;\n        font-size: 16px;\n        box-shadow: 2px 2px 2px black;\n    }\n        .text-input:focus {\n            outline: none;\n        }\n    .submit {\n        margin-left: 5px;\n        height: 30px;\n        width: 80px;\n        border-radius: 5px;\n        font-size: 18px;\n        color: white;\n        background-color:rgba(100, 105, 105, 0.747);\n        border: none;\n    }\n        .submit:hover {\n            transform: scale(1.1);\n        }\n\n.city-background {\n    margin-top: 10px;\n    width: 100%;\n    height: 500px;\n    background-image: url(\"https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg\");\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: (0, 0);\n    box-shadow: 2px 2px 2px rgba(12, 12, 12, 0.6);\n    background-blend-mode: darken;\n    \n}\n    .weather-container {\n        position: relative;\n        padding-top: 5px;\n        height: 190px;\n        width: 160px;\n        z-index: 5;\n        /* border: 1px solid black; */\n        left: 50px;\n        top: 40px;\n        text-align: center;\n        background-color:rgba(192, 197, 197, 0.4);\n        /* box-shadow: 2px 2px 1px rgba(95, 97, 97, 0.6); */\n        border-radius: 5px;\n\n    }\n        .city-name {\n            font-size: 24px;\n            margin-top: 10px;\n            font-family: helvetica;\n            font-weight: bolder;\n        }\n        .weather-icon {\n            margin-top: -30px;\n            padding: none;\n            transform: scale(1.5);\n        }\n        .temp {\n            font-size: 22px;\n            margin-top: -15px;\n            font-family: helvetica;\n            color: black;\n            font-weight: bold;\n        }\n        .description {\n            font-size: 20px;\n            margin-top: -15px;\n            font-family: helvetica;\n        }\n\nh2 {\n    color: white;\n}\n\n.hourly-container {\n    display: grid;\n    margin-top: 15px;\n    height: 300px;\n    grid-template-columns: repeat(7, 1fr);\n    grid-template-rows: repeat(2, 1fr);\n    /* outline: 1px solid black; */\n    color: white;\n}\n    .hourly {\n        padding-top: -5px;\n        height: 150px;\n        border: 1px solid black;\n        text-align: center;\n        background-color:rgba(167, 173, 173, 0.301);\n    }\n        .hourly-name {\n            margin-top: 5px;\n        }\n        .hourly-icon {\n            transform: scale(1.2);\n            margin-top: -35px;\n        }\n        .hourly-temp {\n            margin-top: -20px;\n            font-size: 18px;\n        }\n        .hourly-description {\n            margin-top: -5px;\n            font-size: 1em;\n        }\n        #hour-pre {\n            font-size: 18px;\n        }\n\n.weekly-container {\n    display: grid;\n    margin-top: 15px;\n    height: 300px;\n    grid-template-columns: repeat(7, 1fr);\n    grid-template-rows: repeat(1, 1fr);\n    /* outline: 1px solid black; */\n    color: white;\n}\n    .weekly {\n        padding-top: -5px;\n        height: 150px;\n        border: 1px solid black;\n        text-align: center;\n        background-color:rgba(167, 173, 173, 0.301);\n    }\n        .weekly-name {\n            margin-top: 5px;\n            font-size: 1.2em;\n            margin-bottom: 20px;\n        }\n        .weekly-icon {\n            transform: scale(1.2);\n            margin-top: -35px;\n        }\n        .weekly-temp {\n            margin-top: -20px;\n            font-size: 18px;\n        }\n        .weekly-description {\n            margin-top: -5px;\n            font-size: 1em;\n        }\n        #week-pre {\n            font-size: 18px;\n        }"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nbody {\n    background-color: rgba(0, 0, 0, 0.9);\n    font-family: Geneva, Verdana, sans-serif;\n    \n}\n.header {\n    position: relative;\n    top: 0px;\n    height: 60px;\n    width: auto;\n    text-align: center;\n    color: white;\n     \n}\n\n.weather-search {\n    display: inline-block;\n    position: relative;\n    left: 50%;\n    transform: translate(-50%, 0);\n    \n}\n    .label {\n        margin-right: 5px;\n        font-size: 24px;\n        color: white;\n    }\n    .text-input {\n        width: 250px;\n        height: 25px;\n        border-radius: 15px;\n        background-color:rgba(100, 105, 105, 0.747);\n        border: none;\n        color: white;\n        padding-left: 10px;\n        font-size: 16px;\n        /* box-shadow: 2px 2px 2px black; */\n    }\n        .text-input:focus {\n            outline: none;\n        }\n    .submit {\n        margin-left: 5px;\n        height: 30px;\n        width: 80px;\n        border-radius: 5px;\n        font-size: 18px;\n        color: white;\n        background-color:rgba(100, 105, 105, 0.747);\n        border: none;\n        font-family: Geneva, Verdana, sans-serif;\n    }\n        .submit:hover {\n            transform: scale(1.1);\n        }\n\n.city-background {\n    margin-top: 10px;\n    width: 100%;\n    height: 500px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: (0, 0);\n    box-shadow: 2px 2px 2px rgba(12, 12, 12, 0.6);\n    background-blend-mode: darken;\n    border-radius: 10px;\n    \n}\n    .weather-container {\n        position: relative;\n        padding-top: 5px;\n        height: 190px;\n        width: 160px;\n        z-index: 5;\n        /* border: 1px solid black; */\n        left: 50px;\n        top: 40px;\n        text-align: center;\n        background-color:rgba(192, 197, 197, 0.4);\n        /* box-shadow: 2px 2px 1px rgba(95, 97, 97, 0.6); */\n        border-radius: 5px;\n\n    }\n        .city-name {\n            font-size: 24px;\n            margin-top: 10px;\n            font-family: helvetica;\n            font-weight: bolder;\n        }\n        .weather-icon {\n            margin-top: -30px;\n            padding: none;\n            transform: scale(1.5);\n        }\n        .temp {\n            font-size: 22px;\n            margin-top: -15px;\n            font-family: helvetica;\n            color: black;\n            font-weight: bold;\n        }\n        .description {\n            font-size: 20px;\n            margin-top: -15px;\n            font-family: helvetica;\n        }\n\nh2 {\n    color: white;\n    margin-left: 20px;\n}\n\n.hourly-container {\n    position: relative;\n    left: 50%;\n    transform:translate(-50%, 0);\n    display: flex;\n    justify-content: center;\n    flex-wrap: wrap;\n    margin-top: 15px;\n    height: auto;\n    max-width: 95vw;\n    /* outline: 1px solid black; */\n    color: white;\n    font-size: 12px;\n    font-family: Geneva, Verdana, sans-serif;\n}\n    .hourly {\n        padding-top: -5px;\n        height: 150px;\n        width: 130px;\n        margin-top: 8px;\n        margin-right: 8px;\n        text-align: center;\n        /* background-color:rgba(167, 173, 173, 0.301); */\n    }\n        .hourly-name {\n            margin-top: 5px;\n            font-size: 14px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        .hourly-icon {\n            transform: scale(1.2);\n            margin-top: -35px;\n        }\n        .hourly-temp {\n            margin-top: -20px;\n            margin-bottom: 7px;\n            font-size: 12px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        .hourly-description {\n            margin-top: -5px;\n            font-size: 12px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        #hour-pre {\n            font-size: 18px;\n        }\n\n.weekly-container {\n    display: flex;\n    margin-top: 15px;\n    margin-bottom: 20px;\n    height: auto;\n    max-width: 95vw;\n    flex-wrap: wrap;\n    justify-content: center;\n    color: white;\n}\n    .weekly {\n        padding-top: -5px;\n        height: 150px;\n        width: 130px;\n        margin: 8px 8px 0 0;\n        text-align: center;\n        /* background-color:rgba(167, 173, 173, 0.301); */\n        font-size: 12px;\n        font-family: Geneva, Verdana, sans-serif;\n    }\n        .weekly-name {\n            margin-top: 5px;\n            margin-bottom: 20px;\n            font-size: 14px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        .weekly-icon {\n            transform: scale(1.2);\n            margin-top: -35px;\n        }\n        .weekly-temp {\n            margin-top: -20px;\n            font-size: 12px;\n            font-family: Geneva, Verdana, sans-serif;\n            margin-bottom: 7px;\n        }\n        .weekly-description {\n            margin-top: -5px;\n            font-size: 1em;\n            font-size: 12px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        #week-pre {\n            font-size: 18px;\n        }\n\n@media (max-width: 500px) {\n    .header {\n        min-width: 350px;\n    }\n    .main-header {\n        font-size: 24px;\n    }\n    .text-input {\n        font-size: 14px;\n        width: 200px;\n    }\n    .label {\n        position: fixed;\n        left: 500px;\n        display: none;\n    }\n}", "",{"version":3,"sources":["webpack://./styles.css"],"names":[],"mappings":";AACA;IACI,oCAAoC;IACpC,wCAAwC;;AAE5C;AACA;IACI,kBAAkB;IAClB,QAAQ;IACR,YAAY;IACZ,WAAW;IACX,kBAAkB;IAClB,YAAY;;AAEhB;;AAEA;IACI,qBAAqB;IACrB,kBAAkB;IAClB,SAAS;IACT,6BAA6B;;AAEjC;IACI;QACI,iBAAiB;QACjB,eAAe;QACf,YAAY;IAChB;IACA;QACI,YAAY;QACZ,YAAY;QACZ,mBAAmB;QACnB,2CAA2C;QAC3C,YAAY;QACZ,YAAY;QACZ,kBAAkB;QAClB,eAAe;QACf,mCAAmC;IACvC;QACI;YACI,aAAa;QACjB;IACJ;QACI,gBAAgB;QAChB,YAAY;QACZ,WAAW;QACX,kBAAkB;QAClB,eAAe;QACf,YAAY;QACZ,2CAA2C;QAC3C,YAAY;QACZ,wCAAwC;IAC5C;QACI;YACI,qBAAqB;QACzB;;AAER;IACI,gBAAgB;IAChB,WAAW;IACX,aAAa;IACb,yDAAuD;IACvD,sBAAsB;IACtB,4BAA4B;IAC5B,2BAA2B;IAC3B,6CAA6C;IAC7C,6BAA6B;IAC7B,mBAAmB;;AAEvB;IACI;QACI,kBAAkB;QAClB,gBAAgB;QAChB,aAAa;QACb,YAAY;QACZ,UAAU;QACV,6BAA6B;QAC7B,UAAU;QACV,SAAS;QACT,kBAAkB;QAClB,yCAAyC;QACzC,mDAAmD;QACnD,kBAAkB;;IAEtB;QACI;YACI,eAAe;YACf,gBAAgB;YAChB,sBAAsB;YACtB,mBAAmB;QACvB;QACA;YACI,iBAAiB;YACjB,aAAa;YACb,qBAAqB;QACzB;QACA;YACI,eAAe;YACf,iBAAiB;YACjB,sBAAsB;YACtB,YAAY;YACZ,iBAAiB;QACrB;QACA;YACI,eAAe;YACf,iBAAiB;YACjB,sBAAsB;QAC1B;;AAER;IACI,YAAY;IACZ,iBAAiB;AACrB;;AAEA;IACI,kBAAkB;IAClB,SAAS;IACT,4BAA4B;IAC5B,aAAa;IACb,uBAAuB;IACvB,eAAe;IACf,gBAAgB;IAChB,YAAY;IACZ,eAAe;IACf,8BAA8B;IAC9B,YAAY;IACZ,eAAe;IACf,wCAAwC;AAC5C;IACI;QACI,iBAAiB;QACjB,aAAa;QACb,YAAY;QACZ,eAAe;QACf,iBAAiB;QACjB,kBAAkB;QAClB,iDAAiD;IACrD;QACI;YACI,eAAe;YACf,eAAe;YACf,wCAAwC;QAC5C;QACA;YACI,qBAAqB;YACrB,iBAAiB;QACrB;QACA;YACI,iBAAiB;YACjB,kBAAkB;YAClB,eAAe;YACf,wCAAwC;QAC5C;QACA;YACI,gBAAgB;YAChB,eAAe;YACf,wCAAwC;QAC5C;QACA;YACI,eAAe;QACnB;;AAER;IACI,aAAa;IACb,gBAAgB;IAChB,mBAAmB;IACnB,YAAY;IACZ,eAAe;IACf,eAAe;IACf,uBAAuB;IACvB,YAAY;AAChB;IACI;QACI,iBAAiB;QACjB,aAAa;QACb,YAAY;QACZ,mBAAmB;QACnB,kBAAkB;QAClB,iDAAiD;QACjD,eAAe;QACf,wCAAwC;IAC5C;QACI;YACI,eAAe;YACf,mBAAmB;YACnB,eAAe;YACf,wCAAwC;QAC5C;QACA;YACI,qBAAqB;YACrB,iBAAiB;QACrB;QACA;YACI,iBAAiB;YACjB,eAAe;YACf,wCAAwC;YACxC,kBAAkB;QACtB;QACA;YACI,gBAAgB;YAChB,cAAc;YACd,eAAe;YACf,wCAAwC;QAC5C;QACA;YACI,eAAe;QACnB;;AAER;IACI;QACI,gBAAgB;IACpB;IACA;QACI,eAAe;IACnB;IACA;QACI,eAAe;QACf,YAAY;IAChB;IACA;QACI,eAAe;QACf,WAAW;QACX,aAAa;IACjB;AACJ","sourcesContent":["\nbody {\n    background-color: rgba(0, 0, 0, 0.9);\n    font-family: Geneva, Verdana, sans-serif;\n    \n}\n.header {\n    position: relative;\n    top: 0px;\n    height: 60px;\n    width: auto;\n    text-align: center;\n    color: white;\n     \n}\n\n.weather-search {\n    display: inline-block;\n    position: relative;\n    left: 50%;\n    transform: translate(-50%, 0);\n    \n}\n    .label {\n        margin-right: 5px;\n        font-size: 24px;\n        color: white;\n    }\n    .text-input {\n        width: 250px;\n        height: 25px;\n        border-radius: 15px;\n        background-color:rgba(100, 105, 105, 0.747);\n        border: none;\n        color: white;\n        padding-left: 10px;\n        font-size: 16px;\n        /* box-shadow: 2px 2px 2px black; */\n    }\n        .text-input:focus {\n            outline: none;\n        }\n    .submit {\n        margin-left: 5px;\n        height: 30px;\n        width: 80px;\n        border-radius: 5px;\n        font-size: 18px;\n        color: white;\n        background-color:rgba(100, 105, 105, 0.747);\n        border: none;\n        font-family: Geneva, Verdana, sans-serif;\n    }\n        .submit:hover {\n            transform: scale(1.1);\n        }\n\n.city-background {\n    margin-top: 10px;\n    width: 100%;\n    height: 500px;\n    background-image: url(\"./images/scattered-clouds.jpeg\");\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: (0, 0);\n    box-shadow: 2px 2px 2px rgba(12, 12, 12, 0.6);\n    background-blend-mode: darken;\n    border-radius: 10px;\n    \n}\n    .weather-container {\n        position: relative;\n        padding-top: 5px;\n        height: 190px;\n        width: 160px;\n        z-index: 5;\n        /* border: 1px solid black; */\n        left: 50px;\n        top: 40px;\n        text-align: center;\n        background-color:rgba(192, 197, 197, 0.4);\n        /* box-shadow: 2px 2px 1px rgba(95, 97, 97, 0.6); */\n        border-radius: 5px;\n\n    }\n        .city-name {\n            font-size: 24px;\n            margin-top: 10px;\n            font-family: helvetica;\n            font-weight: bolder;\n        }\n        .weather-icon {\n            margin-top: -30px;\n            padding: none;\n            transform: scale(1.5);\n        }\n        .temp {\n            font-size: 22px;\n            margin-top: -15px;\n            font-family: helvetica;\n            color: black;\n            font-weight: bold;\n        }\n        .description {\n            font-size: 20px;\n            margin-top: -15px;\n            font-family: helvetica;\n        }\n\nh2 {\n    color: white;\n    margin-left: 20px;\n}\n\n.hourly-container {\n    position: relative;\n    left: 50%;\n    transform:translate(-50%, 0);\n    display: flex;\n    justify-content: center;\n    flex-wrap: wrap;\n    margin-top: 15px;\n    height: auto;\n    max-width: 95vw;\n    /* outline: 1px solid black; */\n    color: white;\n    font-size: 12px;\n    font-family: Geneva, Verdana, sans-serif;\n}\n    .hourly {\n        padding-top: -5px;\n        height: 150px;\n        width: 130px;\n        margin-top: 8px;\n        margin-right: 8px;\n        text-align: center;\n        /* background-color:rgba(167, 173, 173, 0.301); */\n    }\n        .hourly-name {\n            margin-top: 5px;\n            font-size: 14px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        .hourly-icon {\n            transform: scale(1.2);\n            margin-top: -35px;\n        }\n        .hourly-temp {\n            margin-top: -20px;\n            margin-bottom: 7px;\n            font-size: 12px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        .hourly-description {\n            margin-top: -5px;\n            font-size: 12px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        #hour-pre {\n            font-size: 18px;\n        }\n\n.weekly-container {\n    display: flex;\n    margin-top: 15px;\n    margin-bottom: 20px;\n    height: auto;\n    max-width: 95vw;\n    flex-wrap: wrap;\n    justify-content: center;\n    color: white;\n}\n    .weekly {\n        padding-top: -5px;\n        height: 150px;\n        width: 130px;\n        margin: 8px 8px 0 0;\n        text-align: center;\n        /* background-color:rgba(167, 173, 173, 0.301); */\n        font-size: 12px;\n        font-family: Geneva, Verdana, sans-serif;\n    }\n        .weekly-name {\n            margin-top: 5px;\n            margin-bottom: 20px;\n            font-size: 14px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        .weekly-icon {\n            transform: scale(1.2);\n            margin-top: -35px;\n        }\n        .weekly-temp {\n            margin-top: -20px;\n            font-size: 12px;\n            font-family: Geneva, Verdana, sans-serif;\n            margin-bottom: 7px;\n        }\n        .weekly-description {\n            margin-top: -5px;\n            font-size: 1em;\n            font-size: 12px;\n            font-family: Geneva, Verdana, sans-serif;\n        }\n        #week-pre {\n            font-size: 18px;\n        }\n\n@media (max-width: 500px) {\n    .header {\n        min-width: 350px;\n    }\n    .main-header {\n        font-size: 24px;\n    }\n    .text-input {\n        font-size: 14px;\n        width: 200px;\n    }\n    .label {\n        position: fixed;\n        left: 500px;\n        display: none;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -140,6 +183,49 @@ module.exports = function cssWithMappingToString(item) {
   }
 
   return [content].join("\n");
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== "string") {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
 };
 
 /***/ }),
@@ -459,6 +545,8 @@ module.exports = function (list, options) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ "./styles.css");
+/* harmony import */ var _data_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data.js */ "./data.js");
+ 
  
 
 
@@ -506,6 +594,7 @@ const weather = (() => {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=current,minutely&units=imperial&appid=d55986fd6fc9347243af3c997d2c2ea2`, {mode: 'cors'});
         weatherData = await response.json();
         await console.log(weatherData);
+        // await console.log(weatherData.weather[0].main);
 
         await helpers.createHourlyElement(weatherData);
         await helpers.createWeeklyElement(weatherData);
@@ -550,15 +639,7 @@ const helpers = (() => {
     const hourContainer = document.querySelector(".hourly-container");
     const weekContainer = document.querySelector(".weekly-container");
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let images = [
-        { name: 'clear sky', source: "https://s7d2.scene7.com/is/image/TWCNews/1031_nc_sunny_weather_3-1"},
-        { name: 'few clouds', source: "https://media.atre.yardi.com/2/69598/images/feature-image-economist-sky.jpg?w=1200&h=699"},
-        { name: 'broken clouds', source: "https://jooinn.com/images/thick-clouds-17.png"},
-        { name: 'rain', source: "https://i.ytimg.com/vi/q76bMs-NwRk/maxresdefault.jpg"},
-        { name: 'thunderstorm', source: 'https://s7d2.scene7.com/is/image/TWCNews/lightning_jpg-8'},
-        { name: 'snow', source: 'https://static.onecms.io/wp-content/uploads/sites/20/2020/05/07/snow.jpg'},
-        { name: 'mist', source: 'https://miro.medium.com/max/11232/1*98gG7ExhK_u65YelvtU8FA.jpeg'}
-    ]
+    let images = _data_js__WEBPACK_IMPORTED_MODULE_1__.links;
 
     function kToF(kelvin) {
         let fahr = 9 / 5 * (kelvin - 273) + 32;
@@ -653,10 +734,15 @@ const helpers = (() => {
     }
 
     function chooseImage(weatherData) {
+        console.log(images);
         let imgBack = document.querySelector(".city-background");
-        let descriptor = weatherData.weather[0].main;
+        let descriptor = weatherData.weather[0].description;
+        console.log(weatherData);
+        console.log(descriptor);
         descriptor = descriptor.toLowerCase();
-        if(descriptor == "clear sky") {
+        if(weatherData.weather[0].icon.includes("n")) {
+            imgBack.style.backgroundImage = `url(${images[7].source})`;
+        } else if(descriptor == "clear sky") {
             imgBack.style.backgroundImage = `url(${images[0].source})`;
         } else if (descriptor == 'few clouds' || descriptor == 'scattered clouds') {
             imgBack.style.backgroundImage = `url(${images[1].source})`;
@@ -745,6 +831,18 @@ const helpers = (() => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -759,6 +857,26 @@ const helpers = (() => {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
